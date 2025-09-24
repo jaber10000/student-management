@@ -1,6 +1,6 @@
 # 🎓 Student Management System
 
-A **modern React + Vite based Student Management System** designed for universities and colleges to manage students, teachers, staff, courses, exams, attendance, and library resources efficiently.
+A **modern React based Student Management System** designed for universities and colleges to manage students, teachers, staff, courses, exams, attendance, and library resources efficiently.
 
 
 ## 📌 Features
@@ -29,6 +29,7 @@ A **modern React + Vite based Student Management System** designed for universit
 - **Routing:** React Router  
 - **Styling:** CSS3
 - **Deployment:** GitHub Pages  
+
 
 
 
