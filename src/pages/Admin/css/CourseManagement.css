@@ -1,0 +1,177 @@
+.course-container {
+  padding: 20px;
+  background: #f9fafb;
+  min-height: 50vh;
+  font-family: "Segoe UI", sans-serif;
+  max-width: 1500px;   /* ✅ Centered layout */
+  margin: auto;
+}
+
+h2 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Add Course Form */
+.add-course-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+  justify-content: center;
+}
+
+.add-course-form input,
+.add-course-form select {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 180px;
+}
+
+.add-course-form button {
+  padding: 10px 15px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-course-form button:hover {
+  background: #224ee1;
+}
+
+/* Course Table */
+.course-table {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.table-header, .table-row {
+  display: grid;
+  grid-template-columns: 80px 1.5fr 1fr 1fr 1fr 1fr 100px 150px;
+  padding: 12px;
+  align-items: center;
+}
+
+.table-header {
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+}
+
+.table-row {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table-row:hover {
+  background: #f3f4f6;
+}
+
+.actions button {
+  margin-right: 6px;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.actions button:first-child {
+  background: #f59e0b;
+  color: white;
+}
+
+.actions button:last-child {
+  background: #ef4444;
+  color: white;
+}
+/* Modal overlay */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5); /* semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal content card */
+.modal-content {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 16px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Modal heading */
+.modal-content h3 {
+  margin: 0 0 15px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #111827;
+  text-align: center;
+}
+
+/* Input & select fields */
+.modal-content input,
+.modal-content select {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.modal-content input:focus,
+.modal-content select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37,99,235,0.2);
+}
+
+/* Actions container */
+.modal-actions1 {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Cancel button */
+.modal-actions1 button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.modal-actions1 button:hover {
+  opacity: 0.9;
+}
+
+/* Save button */
+.modal-actions1 .save-btn {
+  background: #2563eb;
+  color: #fff;
+}
+
+.modal-actions1 .save-btn:hover {
+  background: #1d4ed8;
+}

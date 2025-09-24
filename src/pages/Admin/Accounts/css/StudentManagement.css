@@ -1,0 +1,218 @@
+.student-container1 {
+  width: 100%;
+  max-width: 1500px; /* container will respect this */
+  margin: 0 auto;
+  padding: 30px;
+  font-family: "Inter", sans-serif;
+  background: #f9fafb;
+  border-radius: 12px;
+}
+
+/* Title */
+h2 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Department buttons */
+.dept-buttons {
+  display: flex;
+  flex-wrap: wrap; /* responsive row */
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.dept-buttons button {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  background-color: #e5e7eb;
+  cursor: pointer;
+  flex-shrink: 0; /* prevent squishing */
+}
+.dept-buttons button.active {
+  background-color: #4f46e5;
+  color: white;
+}
+
+/* Add button */
+.add-btn {
+  margin-bottom: 15px;
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: none;
+  background-color: #4f46e5;
+  color: white;
+  cursor: pointer;
+}
+.add-btn:hover { background-color: #4338ca; }
+
+/* Table */
+.student-table {
+  display:flex;
+  column-width: 10px;
+  flex-direction: column;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  gap: 10px;
+}
+.table-header,
+.table-row {
+  column-gap: 1px;
+  display: grid;
+  grid-template-columns: 1.2fr 1.5fr 0.8fr 0.8fr 1.2fr 0.8fr 0.8fr 2fr; 
+  /* last column more space for actions */
+  padding: 10px 12px;
+  align-items: center;
+}
+.table-header { background: #f3f4f6; font-weight: 600; }
+.table-row {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+.table-row:nth-child(even) { background: #f9fafb; }
+
+/* Action buttons aligned properly */
+.actionsSM {
+  display: flex;
+  justify-content: flex-start;
+  gap: 6px;
+  flex-wrap: nowrap; /* keep them in a line */
+}
+
+.actionsSM button {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  white-space: nowrap; /* prevent wrapping */
+}
+
+.actionsSM button:nth-child(1) { background-color: #fbbf24; color: white; } /* Edit */
+.actionsSM button:nth-child(2) { background-color: #ef4444; color: white; } /* Delete */
+.actionsSM button:nth-child(3) { background-color: #3b82f6; color: white; } /* Message */
+
+.actionsSM button:hover { opacity: 0.9; }
+
+/* Background overlay */
+.modal-backdropSM {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* dark transparent overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal box */
+.modalSM {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  animation: scaleIn 0.2s ease-in-out;
+}
+
+/* Heading */
+.modalSM h3 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Inputs */
+.modalSM input,
+.modalSM select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Actions (buttons) */
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.modal-actions button {
+  flex: 1;
+  padding: 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.modal-actions button[type="submit"] {
+  background: #007bff;
+  color: white;
+}
+
+.modal-actions button[type="submit"]:hover {
+  background: #0056b3;
+  color: white;
+}
+
+.modal-actions button[type="button"] {
+  background: #f0f0f0;
+}
+
+.modal-actions button[type="button"]:hover {
+  background: #ddd;
+}
+
+/* Animation */
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+/* Animation */
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Fix */
+@media (max-width: 900px) {
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1.5fr 1fr 1fr 1.8fr;
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 600px) {
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr 1.2fr 1fr 1fr;
+    grid-auto-flow: row;
+  }
+  .actionsSM {
+    flex-wrap: wrap; /* small screen wrap allowed */
+    justify-content: flex-start;
+  }
+}

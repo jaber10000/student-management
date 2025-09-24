@@ -1,0 +1,139 @@
+.FR-container {
+  min-width: 1500px;
+  padding: 30px;
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f6f9;
+}
+
+.FR-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+/* ===== Summary Cards ===== */
+.FR-cards-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.FR-card {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.FR-card input {
+  width: 100%;
+  padding: 8px;
+  font-size: 18px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.FR-profit {
+  border: 2px solid #2ecc71;
+  color: #2ecc71;
+}
+
+.FR-loss {
+  border: 2px solid #e74c3c;
+  color: #e74c3c;
+}
+
+/* ===== Chart ===== */
+.FR-chart-row {
+  margin-bottom: 40px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ===== Table ===== */
+.FR-table-container {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.FR-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.FR-table th, .FR-table td {
+  border: 1px solid #ddd;
+  padding: 12px 10px;
+  text-align: center;
+}
+
+.FR-table th {
+  background: #3498db;
+  color: white;
+}
+
+.FR-table tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.FR-filters-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.FR-filters-row select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.FR-btn-download {
+  padding: 8px 16px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.FR-btn-download:hover {
+  background: #1e8449;
+}
+
+
+.FR-btn-approve {
+  background: #27ae60;
+  color: white;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.FR-btn-approve:hover {
+  background: #1e8449;
+}
+
+.FR-btn-reject {
+  background: #e74c3c;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.FR-btn-reject:hover {
+  background: #c0392b;
+}

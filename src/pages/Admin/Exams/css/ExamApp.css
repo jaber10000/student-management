@@ -1,0 +1,23 @@
+/* ExamApp Container Styles (EA-) */
+
+.EA-container {
+  margin: 20px auto;
+  max-width: 1200px;
+  background: #f0f4ff;
+  border-radius: 14px;
+  border: 1px solid #d0d7e6;
+}
+
+.EA-header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+.EA-separator {
+  margin: 30px 0;
+  border: none;
+  border-top: 2px dashed #bbb;
+}

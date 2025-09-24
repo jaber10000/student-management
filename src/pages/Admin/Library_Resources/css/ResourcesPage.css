@@ -1,0 +1,88 @@
+.RP-container {
+  padding-top: 50px;
+  background: #f9f9f9;
+  font-family: Arial, sans-serif;
+
+}
+
+.RP-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.RP-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.RP-form input, .RP-form select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  flex: 1;
+  min-width: 120px;
+}
+
+.RP-form button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #338eea;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.RP-form button:hover {
+  background: #2a6ccf;
+}
+
+.RP-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.RP-table th, .RP-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.RP-table th {
+  background: #338eea;
+  color: #fff;
+}
+
+.RP-btn-edit {
+  background: #1cc88a;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.RP-btn-edit:hover { background: #138a6b; }
+
+.RP-btn-delete {
+  background: #e74c3c;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.RP-btn-delete:hover { background: #c0392b; }

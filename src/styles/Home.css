@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  background: rgb(13, 124, 222);
+  font-family: "Segoe UI", sans-serif;
+  color: rgb(18, 0, 222);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container center */
+.home-container {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding-bottom: 200px;
+}
+
+/* Title wrapper → fixed height, menu fixed থাকবে */
+/* Signboard box */
+.title-wrapper {
+  width: 1100px;
+  height: 100px;
+  margin: 0 auto 2rem auto;
+  background:none;   /* transparent black bg */
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden; /* hide extra text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow:0;
+}
+
+/* Text itself */
+.home-title {
+  font-size: 3rem;
+  font-weight: bold;
+  white-space: nowrap;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Magic flowing effect */
+.magic-text {
+  display: inline-block;
+  animation: slideThrough 10s ease-in-out infinite;
+}
+
+@keyframes slideThrough {
+  0% {
+    transform: translateX(-120%); /* start left outside */
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;  /* fade in magic */
+  }
+  50% {
+    transform: translateX(0%); /* fully visible inside box */
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(120%); /* go out right side */
+    opacity: 0;  /* fade out */
+  }
+}
+
+
+
+/* Menu */
+.home-menu {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 25px 50px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  display: inline-block;
+  margin-top: 20px;
+  width: 500px;
+}
+
+.home-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.home-menu li {
+  padding: 12px 22px;
+  margin: 12px 0;
+  background: white;
+  color: #1e3a8a;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;   /* Horizontal center */
+  align-items: center;       /* Vertical center */
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.home-menu li:hover {
+  background: #1d4ed8;
+  color: white;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+.flying-icons {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.flying-icons .icon {
+  position: absolute;
+  font-size: 1.8rem;
+  opacity: 0.25;
+  color: white;
+}
+
+/* Spread icons in different fixed places */
+.icon-0 { top: 5%;  left: 8%;  }
+.icon-1 { top: 12%; left: 20%; }
+.icon-2 { top: 18%; left: 75%; }
+.icon-3 { top: 25%; left: 40%; }
+.icon-4 { top: 32%; left: 60%; }
+.icon-5 { top: 40%; left: 10%; }
+.icon-6 { top: 48%; left: 85%; }
+.icon-7 { top: 55%; left: 30%; }
+.icon-8 { top: 62%; left: 70%; }
+.icon-9 { top: 70%; left: 15%; }
+.icon-10 { top: 78%; left: 50%; }
+.icon-11 { top: 82%; left: 90%; }
+.icon-12 { top: 20%; left: 5%;  }
+.icon-13 { top: 45%; left: 45%; }
+.icon-14 { top: 60%; left: 25%; }
+.icon-15 { top: 65%; left: 80%; }
+.icon-16 { top: 85%; left: 35%; }
+.icon-17 { top: 90%; left: 70%; }

@@ -1,0 +1,64 @@
+.TP-container {
+  background: #f9f9f9;
+}
+
+.TP-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.TP-kpi-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.TP-card {
+  flex: 1;
+  margin: 10px;
+  padding: 15px;
+  background: rgb(39, 163, 216);
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  color: white;
+}
+
+.TP-charts-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.TP-chart, .TP-chart-wide {
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.TP-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.TP-table th, .TP-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.TP-table th {
+  background: #2c3e50;
+  color: white;
+}

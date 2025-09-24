@@ -1,0 +1,82 @@
+/* ProfilePage.css */
+
+.profile-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 700px;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+}
+
+.profile-box h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #2c3e50;
+}
+
+.profile-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.profile-table th {
+  text-align: left;
+  background: #f8f9fa;
+  color: #34495e;
+  padding: 10px;
+  width: 180px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.profile-table td {
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #2c3e50;
+}
+
+/* Edit mode inputs */
+.profile-table.edit-mode input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+.profile-actions {
+  text-align: right;
+}
+
+.btn-edit,
+.btn-save {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-edit {
+  background: #3498db;
+  color: #fff;
+}
+
+.btn-edit:hover {
+  background: #2980b9;
+}
+
+.btn-save {
+  background: #2ecc71;
+  color: #fff;
+}
+
+.btn-save:hover {
+  background: #27ae60;
+}

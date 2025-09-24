@@ -1,0 +1,162 @@
+
+
+.admin-dashboard {
+  display: flex;
+  width: 210vh;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  color: #104df5;
+}
+/* Sidebar styling */
+.sidebar2 {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #2563eb; /* proper blue */
+  color: white;
+  z-index: 100;
+  transition: transform 0.3s ease;
+}
+
+/* When sidebar is hidden */
+.sidebar2.closed {
+  transform: translateX(-100%);
+}
+
+.sidebar2 h2 {
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.sidebar2 ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar2 li {
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar2 li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar2 li.active {
+  background: white;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+/* Back button inside sidebar */
+.sidebar2 .back-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.sidebar2 .back-btn:hover {
+  background: white;
+  color: #2563eb;
+}
+
+/* Sidebar toggle button (top-left) */
+/* Sidebar Toggle Button */
+.sidebar-toggle-btn {
+  position: fixed;
+  top: 20px;          /* distance from top */
+  left: 20px;         /* distance from left */
+  width: 40px;
+  height: 40px;
+  background-color: #2563eb; /* same as sidebar */
+  border: none;
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 200;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar-toggle-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar-toggle-btn:hover {
+  background-color: #1e40af; /* darker blue on hover */
+  transform: scale(1.05);
+}
+
+
+
+.content {
+  margin-left: 250px;
+  padding: 40px;
+  flex: 1;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-box {
+  background: white;
+  padding: 40px 60px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  width: 100%;
+}
+
+
+.sub-menu {
+  list-style: none;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+
+.sub-menu li {
+  padding: 8px 12px;
+  margin: 4px 0;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sub-menu li:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.sub-menu li.active {
+  background: white;
+  color: #2563eb;
+  font-weight: bold;
+}

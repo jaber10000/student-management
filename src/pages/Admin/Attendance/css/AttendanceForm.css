@@ -1,0 +1,107 @@
+/* Container */
+.at-form-container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Title */
+.at-form-container h2 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+  font-size: 1.4rem;
+}
+
+/* Controls */
+.at-form-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.at-form-controls select,
+.at-form-controls input[type="date"] {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #bdc3c7;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.at-form-controls select:focus,
+.at-form-controls input[type="date"]:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52,152,219,0.3);
+}
+
+/* Save button */
+.at-btn-save {
+  padding: 8px 14px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.at-btn-save:hover {
+  background-color: #219150;
+  transform: translateY(-2px);
+}
+
+/* Table */
+.at-form-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.at-form-table th,
+.at-form-table td {
+  padding: 10px 12px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.at-form-table th {
+  background-color: #34495e;
+  color: white;
+  font-weight: 500;
+}
+
+.at-form-table tr:nth-child(even) td {
+  background-color: #f9f9f9;
+}
+
+.at-form-table input[type="text"] {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #bdc3c7;
+  outline: none;
+  font-size: 0.9rem;
+  width: 90%;
+}
+
+.at-form-table select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #bdc3c7;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .at-form-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

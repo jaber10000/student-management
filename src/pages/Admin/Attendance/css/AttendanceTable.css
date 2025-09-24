@@ -1,0 +1,92 @@
+/* Container */
+.at-table-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+.at-table-container h2 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+  font-size: 1.4rem;
+}
+
+/* Table */
+.at-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.at-table th,
+.at-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.at-table th {
+  background-color: #34495e;
+  color: white;
+  font-weight: 500;
+}
+
+.at-table tr:nth-child(even) td {
+  background-color: #f9f9f9;
+}
+
+/* Status colors */
+.at-status-present {
+  background-color: #26df73;
+  color: rgb(17, 16, 16);
+  font-weight: 500;
+}
+
+.at-status-absent {
+  background-color: #e74c3c;
+  color: rgb(20, 19, 19);
+  font-weight: 500;
+}
+
+.at-status-late {
+  background-color: #f1c40f;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+/* Buttons */
+.at-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 0.9rem;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.at-btn:hover {
+  transform: translateY(-2px);
+}
+
+.at-edit {
+  background-color: #2980b9;
+  color: white;
+}
+
+.at-delete {
+  background-color: #c0392b;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .at-table th, .at-table td {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+}

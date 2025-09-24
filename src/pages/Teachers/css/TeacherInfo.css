@@ -1,0 +1,228 @@
+/* === Teacher Dashboard Styles === */
+.tdash-box {
+  background: #f9fbff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+
+/* Header */
+.tdash-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #eaeef5;
+}
+
+.tdash-info h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #1e3a8a;
+}
+
+.tdash-position {
+  margin: 4px 0 8px;
+  color: #666;
+  font-style: italic;
+}
+
+.tdash-meta span {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.tdash-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.tdash-btn {
+  background: #197fe6;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  
+}
+
+.tdash-btn:hover {
+  background: #06b833;
+}
+
+.tdash-btn.tdash-primary {
+  background: #2563eb;
+  color: #fff;
+}
+
+.tdash-btn.tdash-primary:hover {
+  background: #1d4ed8;
+}
+
+/* Editable Inputs */
+.tdash-info input {
+  display: block;
+  margin-bottom: 6px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 90%;
+}
+
+/* Body Layout */
+.tdash-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.tdash-left, .tdash-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Cards */
+.tdash-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.tdash-card h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.tdash-card ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.tdash-card li {
+  margin: 4px 0;
+  font-size: 0.95rem;
+}
+
+/* Feedback */
+.tdash-feedback-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.tdash-stars {
+  font-size: 1.3rem;
+  color: #f59e0b;
+}
+
+/* Stats Cards */
+.tdash-stats {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.tdash-stat-number {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.tdash-stat-label {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Chart */
+.tdash-chart {
+  width: 100%;
+  height: 100px;
+}
+
+.tdash-chart-legend {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+
+.tdash-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #2563eb;
+  margin-right: 6px;
+}
+
+/* Info Table */
+.tdash-info-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.tdash-info-table th {
+  text-align: left;
+  padding: 6px;
+  color: #444;
+}
+
+.tdash-info-table td {
+  padding: 6px;
+  color: #111;
+}
+
+/* Modal */
+.tdash-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.tdash-modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 95%;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+.tdash-modal-content textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+}
+
+.tdash-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tdash-body {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,237 @@
+/* Container */
+.admin-container2 {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-left: 100px;
+  font-family: "Inter", sans-serif;
+  background: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #111827;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filters select,
+.filters input {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+  flex: 1 1 200px;
+}
+
+/* Add Temporary Staff Form */
+.add-staff-form2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.add-staff-form2 input,
+.add-staff-form2 select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+  flex: 1 1 180px;
+}
+
+.add-staff-form2 button {
+  padding: 8px 15px;
+  border-radius: 6px;
+  border: none;
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-staff-form2 button:hover {
+  background-color: #2563eb;
+}
+
+/* Staff Table */
+.staff-table2 {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-header2,
+.table-row2 {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1.5fr 1.5fr 1.5fr 1fr 1.5fr 1.5fr 2fr 2fr;
+  padding: 10px 12px;
+  align-items: center;
+}
+
+.table-header2 {
+  background: #f3f4f6;
+  font-weight: 600;
+  color: #374151;
+}
+
+.table-row2 {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table-row2:nth-child(even) {
+  background: #f9fafb;
+}
+
+.actionsAM {
+  display: flex;
+  justify-content: flex-start;
+  gap: 6px;
+}
+
+.actionsAM button {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.actionsAM button:nth-child(1) { background-color: #fbbf24; color: white; } /* View */
+.actionsAM button:nth-child(2) { background-color: #3b82f6; color: white; } /* Edit */
+.actionsAM button:nth-child(3) { background-color: #ef4444; color: white; } /* Suspend */
+.actionsAM button:nth-child(4) { background-color: #10b981; color: white; } /* Email */
+
+.actionsAM button:hover {
+  opacity: 0.9;
+}
+
+/* Modal overlay */
+.modal-backdropAM {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center; /* change from center to flex-start */
+  justify-content: center;
+  padding-top: 50px; /* adjust how far from top */
+  z-index: 2000;
+}
+
+.modal-boxAM {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  width: 420px;
+  max-width: 95%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+
+.modal-boxAM h3 {
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.modal-bodyAM {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-boxAM input,
+.modal-boxAM select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.modal-boxAM input:focus,
+.modal-boxAM select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* Modal buttons */
+.modal-actionsAM {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.modal-actionsAM button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.modal-actionsAM button:hover {
+  transform: translateY(-1px);
+}
+
+.modal-actionsAM .cancel-btn {
+  background: #0971b1;
+}
+
+.modal-actionsAM .cancel-btn:hover {
+  background: #1657fa;
+  color: white;
+}
+
+.modal-actionsAM .save-btn {
+  background: #3b82f6;
+  color: #fff;
+}
+
+.modal-actionsAM .save-btn:hover {
+  background: #2563eb;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .table-header2,
+  .table-row2 {
+    grid-template-columns: 2fr 2fr 1.5fr 1.5fr 1fr 1fr 1.5fr 1.5fr 2fr 2fr;
+    font-size: 0.85rem;
+  }
+}

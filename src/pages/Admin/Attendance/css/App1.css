@@ -1,0 +1,73 @@
+/* Main container */
+.at-app {
+    padding-top: 200px;
+  display: flex;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+  color: #3a9cff;
+  width: 100vh;
+}
+
+/* Sidebar */
+.at-sidebar {
+  width: 250px;
+  background: #184c81;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.at-sidebar h2 {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: white;
+}
+
+.at-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.at-sidebar button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.at-sidebar button:hover,
+.at-sidebar button.active {
+  background: #103a63;
+}
+
+/* Main content */
+.at-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Topbar */
+.at-topbar {
+  background: white;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Page content */
+.at-content {
+  padding: 20px;
+  overflow-y: auto;
+}

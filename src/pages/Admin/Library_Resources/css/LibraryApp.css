@@ -1,0 +1,45 @@
+.LA-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f4f9;
+}
+
+.LA-sidebar {
+  width: 120px;
+  background: #1E90FF;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.LA-sidebar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+  padding-top: 20px;
+}
+
+.LA-sidebar nav button {
+  background: transparent;
+  color: #fff;
+  border: none;
+  padding: 12px 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.LA-sidebar nav button.active,
+.LA-sidebar nav button:hover {
+  background: #0f75d1;
+}
+
+.LA-content {
+  flex: 1;
+  padding: 20px;
+}

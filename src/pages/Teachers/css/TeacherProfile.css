@@ -1,0 +1,126 @@
+/* Teacher Profile Container */
+.tp-box {
+  background: #f9fbff;
+  padding-top: 150px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  width: 900px;
+  margin: auto;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.tp-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+}
+
+/* Sections */
+.tp-section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.tp-section h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  color: #111827;
+}
+
+/* Table */
+.tp-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 12px;
+}
+
+.tp-table th,
+.tp-table td {
+  padding: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.tp-table th {
+  width: 40%;
+  color: #374151;
+  font-weight: 600;
+}
+
+.tp-table td {
+  color: #111827;
+}
+
+/* Buttons */
+.tp-btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  background: #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.tp-btn:hover {
+  background: #cb3030;
+}
+
+.tp-btn-primary {
+  background: #2563eb;
+  color: white;
+}
+
+.tp-btn-primary:hover {
+  background: #1d4ed8;
+}
+
+/* Modal */
+.tp-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.4);
+  z-index: 999;
+}
+
+.tp-modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 450px;
+  max-width: 95%;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.tp-edit-row {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tp-edit-row label {
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+  color: #374151;
+}
+
+.tp-edit-row input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+}
+
+.tp-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}

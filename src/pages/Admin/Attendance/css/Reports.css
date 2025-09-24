@@ -1,0 +1,59 @@
+/* Reports container */
+.at-reports-container {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  overflow-x: auto; /* horizontal scroll for small screens */
+}
+
+/* Heading */
+.at-reports-container h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+/* Table */
+.at-reports-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.at-reports-table th,
+.at-reports-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.at-reports-table th {
+  background-color: #34495e;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.at-reports-table td.at-present {
+  background-color: #2ecc71;
+  color: rgb(27, 27, 27);
+  font-weight: 500;
+}
+
+.at-reports-table td.at-absent {
+  background-color: #e74c3c;
+  color: rgb(7, 7, 7);
+  font-weight: 500;
+}
+
+.at-reports-table td.at-late {
+  background-color: #f1c40f;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.at-reports-table tr:nth-child(even) td {
+  background-color: #f9f9f9;
+}
